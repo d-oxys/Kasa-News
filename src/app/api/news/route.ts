@@ -4,7 +4,7 @@ import axios from 'axios';
 const API_KEY = '82c79a6612464ffb81a6ec58c24cb404';
 const BASE_URL = 'https://newsapi.org/v2/top-headlines';
 
-export async function get(req: NextApiRequest, res: NextApiResponse) {
+export default async function get(req: NextApiRequest, res: NextApiResponse) {
   const country = req.query.country || 'us';
 
   try {
