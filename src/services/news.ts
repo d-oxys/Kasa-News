@@ -1,11 +1,13 @@
 import axios from 'axios';
 
-const API_KEY = '82c79a6612464ffb81a6ec58c24cb404';
-const BASE_URL = 'https://newsapi.org/v2';
+// Ganti BASE_URL dengan URL ke serverless function Anda
+const BASE_URL = 'https://kasa-news.vercel.app/api/news';
 
 export const getTopHeadlines = async (country = 'us') => {
   try {
-    const response = await axios.get(`${BASE_URL}/top-headlines?country=${country}&apiKey=${API_KEY}&pageSize=6`);
+    // Karena logika untuk menambahkan API key dan parameter lainnya sudah dipindahkan ke serverless function,
+    // Anda hanya perlu memanggil endpoint tersebut tanpa parameter tambahan
+    const response = await axios.get(`${BASE_URL}`);
     return response.data.articles;
   } catch (error) {
     throw error;
