@@ -34,3 +34,104 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+```
+newsapi
+├─ .eslintrc.json
+├─ .gitignore
+├─ next.config.mjs
+├─ package-lock.json
+├─ package.json
+├─ postcss.config.js
+├─ public
+│  ├─ asset
+│  │  ├─ batik-icon-vertikal.svg
+│  │  ├─ batik-icon.svg
+│  │  ├─ fitur-ilustration.svg
+│  │  ├─ hero-ilustration.svg
+│  │  ├─ logo-white.svg
+│  │  ├─ mendali-emas.png
+│  │  ├─ mendali-perak.png
+│  │  ├─ mendali-perunggu.png
+│  │  ├─ newsapi.png
+│  │  ├─ please-login.png
+│  │  └─ search-ilustration.svg
+│  ├─ fonts
+│  │  └─ Eudoxus
+│  │     ├─ EudoxusSans-Bold.ttf
+│  │     ├─ EudoxusSans-ExtraBold.ttf
+│  │     ├─ EudoxusSans-ExtraLight.ttf
+│  │     ├─ EudoxusSans-Light.ttf
+│  │     ├─ EudoxusSans-Medium.ttf
+│  │     └─ EudoxusSans-Regular.ttf
+│  ├─ hero.png
+│  ├─ images
+│  │  └─ MOCH ICHSAN NR.jpg
+│  ├─ logo-white.svg
+│  ├─ logo.svg
+│  ├─ next.svg
+│  └─ vercel.svg
+├─ README.md
+├─ src
+│  ├─ actions
+│  │  ├─ news.ts
+│  │  └─ search.ts
+│  ├─ app
+│  │  ├─ artikel
+│  │  ├─ error.tsx
+│  │  ├─ favicon.ico
+│  │  ├─ global-error.tsx
+│  │  ├─ layout.tsx
+│  │  ├─ not-found.tsx
+│  │  ├─ page.tsx
+│  │  ├─ produk
+│  │  └─ tentang
+│  │     └─ page.tsx
+│  ├─ components
+│  │  ├─ buttons
+│  │  │  └─ primaryButton
+│  │  │     └─ index.tsx
+│  │  ├─ footer
+│  │  │  ├─ dialog.tsx
+│  │  │  ├─ index.tsx
+│  │  │  └─ message.tsx
+│  │  ├─ forms
+│  │  │  └─ input
+│  │  │     └─ search.tsx
+│  │  ├─ icons
+│  │  │  ├─ search.tsx
+│  │  │  └─ sketchs.tsx
+│  │  ├─ loaders
+│  │  │  └─ index.tsx
+│  │  ├─ navbar
+│  │  │  └─ index.tsx
+│  │  └─ news
+│  │     └─ newsList.tsx
+│  ├─ containers
+│  │  ├─ artikel-page
+│  │  └─ home-page
+│  │     ├─ fiture-section
+│  │     │  └─ index.tsx
+│  │     ├─ headlines-section
+│  │     │  └─ index.tsx
+│  │     └─ hero-section
+│  │        └─ index.tsx
+│  ├─ contents
+│  │  └─ content.tsx
+│  ├─ libs
+│  │  └─ font.ts
+│  ├─ services
+│  │  └─ news.ts
+│  ├─ store
+│  │  ├─ newsContext.tsx
+│  │  └─ newsReducer.ts
+│  ├─ styles
+│  │  └─ globals.css
+│  └─ types
+│     ├─ globalTypes.ts
+│     └─ newsTypes.ts
+├─ tailwind.config.ts
+├─ tsconfig.json
+└─ __tests__
+
+```

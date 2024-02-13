@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-background overflow-x-hidden;
+}
+
+.btn {
+  @apply bg-primary hover:bg-primary rounded-full border-none text-white hover:opacity-80;
+}
+
+.custom-loader {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: conic-gradient(#fff 10%, #d61f3b);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: s3 0.5s infinite linear;
+  -webkit-animation: s3 0.5s infinite linear;
+}
+
+@keyframes s3 {
+  to {
+    transform: rotate(1turn);
+  }
+}
