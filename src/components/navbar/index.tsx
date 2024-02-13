@@ -116,7 +116,7 @@ const menu = [
   },
   {
     label: 'Artikel',
-    link: '/artikel',
+    link: '/artikels',
   },
   {
     label: 'Produk',

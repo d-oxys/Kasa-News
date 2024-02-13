@@ -7,10 +7,11 @@ import { Headline } from '@/types/globalTypes';
 
 const NewsList = () => {
   const { headlines } = useNewsState();
+  console.log('ini adlahal headlines list : ', headlines);
 
   return (
     <div>
-      <article className='mx-auto mb-10 mt-6 px-6 md:my-12 lg:px-12 xl:px-24'>
+      <article className='mx-auto mb-10 mt-6 min-h-40 px-6 md:my-12 lg:px-12 xl:px-24'>
         <div className=''>
           <div className='text-center'>
             <h2 className='mb-4 mt-1 text-3xl font-bold text-gray-900 md:text-4xl'>Rekomendasi Artikel</h2>
@@ -19,7 +20,7 @@ const NewsList = () => {
           <div className='mt-8 grid grid-cols-1 gap-y-5 md:grid-cols-2 md:gap-x-12'>
             <div className='main'>
               {headlines[0] && headlines[0].urlToImage && (
-                <Link href='/workout/ocQKBz9CZM2CvgKVqTSd'>
+                <Link href={`/artikel/${encodeURIComponent(headlines[0].title)}`}>
                   <Card className='h-full border-2 border-gray-200 p-1'>
                     <div className='relative h-[250px] w-full sm:h-[300px] lg:h-[350px] xl:h-[400px]'>
                       <img src={headlines[0].urlToImage} alt='gambar artikel' className='object-cover' style={{ width: '100%', height: '100%' }} sizes='(max-width: 768px) 40vw, (max-width: 1200px) 50vw, 60vw' />

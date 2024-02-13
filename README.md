@@ -78,6 +78,8 @@ newsapi
 │  │  └─ search.ts
 │  ├─ app
 │  │  ├─ artikel
+│  │  │  ├─ page.tsx
+│  │  │  └─ [title].tsx
 │  │  ├─ error.tsx
 │  │  ├─ favicon.ico
 │  │  ├─ global-error.tsx

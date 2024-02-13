@@ -21,4 +21,7 @@ export interface Headline {
   title: string;
   urlToImage: string;
   description: string;
+  author: string;
+  publishedAt: string;
+  content: string;
 }
