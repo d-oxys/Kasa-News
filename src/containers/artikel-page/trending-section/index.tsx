@@ -1,7 +1,6 @@
 import PrimaryButton from '@/components/buttons/primaryButton';
 import ArticleCard from '@/components/artikel/artikelCard';
 import React, { FC, useState, useEffect } from 'react';
-import { articleFilters } from './constants';
 import FilterButton from '@/components/buttons/FilterButton';
 import { ArticleFilter, ArticlesByFilter } from '@/types/newsTypes';
 import { useNewsState, useNewsDispatch } from '@/store/newsContext';

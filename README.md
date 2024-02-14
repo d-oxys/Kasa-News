@@ -1,40 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
 ```
 newsapi
 ├─ .eslintrc.json
@@ -78,11 +41,13 @@ newsapi
 │  │  └─ search.ts
 │  ├─ app
 │  │  ├─ artikel
-│  │  │  ├─ page.tsx
-│  │  │  └─ [title].tsx
+│  │  │  └─ [title]
+│  │  │     └─ page.tsx
+│  │  ├─ artikels
+│  │  │  └─ page.tsx
 │  │  ├─ error.tsx
-│  │  ├─ favicon.ico
 │  │  ├─ global-error.tsx
+│  │  ├─ icon.svg
 │  │  ├─ layout.tsx
 │  │  ├─ not-found.tsx
 │  │  ├─ page.tsx
@@ -90,7 +55,13 @@ newsapi
 │  │  └─ tentang
 │  │     └─ page.tsx
 │  ├─ components
+│  │  ├─ artikel
+│  │  │  ├─ artikelCard.tsx
+│  │  │  ├─ artikelComponents.tsx
+│  │  │  └─ artikelLayout.tsx
 │  │  ├─ buttons
+│  │  │  ├─ FilterButton
+│  │  │  │  └─ index.tsx
 │  │  │  └─ primaryButton
 │  │  │     └─ index.tsx
 │  │  ├─ footer
@@ -102,15 +73,33 @@ newsapi
 │  │  │     └─ search.tsx
 │  │  ├─ icons
 │  │  │  ├─ search.tsx
-│  │  │  └─ sketchs.tsx
+│  │  │  ├─ sketchs.tsx
+│  │  │  └─ slideArrow.tsx
 │  │  ├─ loaders
 │  │  │  └─ index.tsx
 │  │  ├─ navbar
 │  │  │  └─ index.tsx
 │  │  └─ news
+│  │     ├─ newsDetail.tsx
 │  │     └─ newsList.tsx
 │  ├─ containers
 │  │  ├─ artikel-page
+│  │  │  ├─ daily-section
+│  │  │  │  └─ index.tsx
+│  │  │  ├─ detail-section
+│  │  │  │  └─ index.tsx
+│  │  │  ├─ hero-section
+│  │  │  │  ├─ articles-hero-slide
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ slide
+│  │  │  │  │  │  └─ index.tsx
+│  │  │  │  │  └─ style.module.scss
+│  │  │  │  └─ index.tsx
+│  │  │  ├─ main-section
+│  │  │  │  └─ index.tsx
+│  │  │  └─ trending-section
+│  │  │     ├─ constants.ts
+│  │  │     └─ index.tsx
 │  │  └─ home-page
 │  │     ├─ fiture-section
 │  │     │  └─ index.tsx
@@ -123,6 +112,7 @@ newsapi
 │  ├─ libs
 │  │  └─ font.ts
 │  ├─ services
+│  │  ├─ getRecomendation.ts
 │  │  └─ news.ts
 │  ├─ store
 │  │  ├─ newsContext.tsx
@@ -130,6 +120,7 @@ newsapi
 │  ├─ styles
 │  │  └─ globals.css
 │  └─ types
+│     ├─ article.ts
 │     ├─ globalTypes.ts
 │     └─ newsTypes.ts
 ├─ tailwind.config.ts
