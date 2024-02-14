@@ -3,6 +3,16 @@ export interface UserData {
   avatarUrl: string;
 }
 
+interface Article {
+  id: string;
+  author: string;
+  title: string;
+  content: string;
+  category: string;
+  date: string;
+  imgUrl: string;
+}
+
 export interface dialogProps {
   title: string;
   subtitle: string;
@@ -24,4 +34,11 @@ export interface Headline {
   author: string;
   publishedAt: string;
   content: string;
+  url: string;
 }
+
+export type AuthorType = {
+  id: number;
+  name: string;
+  imgUrl: string;
+};

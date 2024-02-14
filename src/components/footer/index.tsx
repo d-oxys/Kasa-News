@@ -149,9 +149,6 @@ export default function Footer() {
                 <Link href={'/artikels'}>Artikel</Link>
               </li>
               <li>
-                <Link href={'/produk'}>Produk</Link>
-              </li>
-              <li>
                 <Link href={'/tentang'}>Tentang</Link>
               </li>
             </ul>

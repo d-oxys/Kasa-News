@@ -119,10 +119,6 @@ const menu = [
     link: '/artikels',
   },
   {
-    label: 'Produk',
-    link: '/produk',
-  },
-  {
     label: 'Tentang',
     link: '/tentang',
   },

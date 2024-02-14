@@ -4,7 +4,7 @@ import { useNewsDispatch } from '@/store/newsContext';
 import { fetchTopHeadlines } from '@/actions/news';
 import NewsDetail from '@/components/news/newsDetail';
 
-const HeadlineSection = () => {
+const DetailSection = () => {
   const dispatch = useNewsDispatch();
 
   useEffect(() => {
@@ -18,4 +18,4 @@ const HeadlineSection = () => {
   );
 };
 
-export default HeadlineSection;
+export default DetailSection;

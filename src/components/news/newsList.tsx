@@ -7,7 +7,6 @@ import { Headline } from '@/types/globalTypes';
 
 const NewsList = () => {
   const { headlines } = useNewsState();
-  console.log('ini adlahal headlines list : ', headlines);
 
   return (
     <div>
@@ -23,7 +22,7 @@ const NewsList = () => {
                 <Link href={`/artikel/${encodeURIComponent(headlines[0].title)}`}>
                   <Card className='h-full border-2 border-gray-200 p-1'>
                     <div className='relative h-[250px] w-full sm:h-[300px] lg:h-[350px] xl:h-[400px]'>
-                      <img src={headlines[0].urlToImage} alt='gambar artikel' className='object-cover' style={{ width: '100%', height: '100%' }} sizes='(max-width: 768px) 40vw, (max-width: 1200px) 50vw, 60vw' />
+                      <img src={headlines[0].urlToImage} alt='gambar artikel' className='object-cover' sizes='(max-width: 768px) 40vw, (max-width: 1200px) 50vw, 60vw' />
                     </div>
 
                     <h3 className='hover:text-primary-2 line-clamp-2 text-xl font-bold leading-snug duration-500'>{headlines[0].title}</h3>

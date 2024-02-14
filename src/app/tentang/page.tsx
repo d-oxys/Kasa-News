@@ -22,11 +22,14 @@ export default function Page() {
             }}
           >
             <div className='mx-auto flex max-w-6xl flex-col items-center px-4'>
-              <h1 className='text-2xl font-bold'>Tentang Flex Force</h1>
+              <h1 className='text-2xl font-bold'>Tentang Kasa News</h1>
               <div className='bg-primary mt-2 h-[2px] w-28'></div>
               <p className='mt-8 max-w-5xl text-center '>
-                FlexForce adalah aplikasi kebugaran yang membantu user mencapai target kebugaran mereka dengan alat, motivasi, dan dukungan. Aplikasi ini memungkinkan pengguna merencanakan makanan, menghitung kalori, melacak aktivitas
-                fisik, dan memantau kemajuan. Fitur uniknya adalah fokus pada kolaborasi antar pengguna melalui komunitas dan dukungan saling berbagi, menciptakan semangat tim yang kuat dalam perjalanan kebugaran.
+                Aplikasi Kasa News adalah sebuah aplikasi berita yang memanfaatkan News API untuk mendapatkan data berita. Aplikasi ini dirancang dengan tujuan untuk mengikuti ujian teknis. Dengan menggunakan News API, aplikasi ini dapat
+                menampilkan berita terkini dari berbagai sumber secara real-time.
+              </p>
+              <p className=' mt-6 max-w-5xl text-center'>
+                Karena Aplikasi isi menggunakan api dari newsapi maka aplikasi ini hanya dapat berjalan di local saja jika anda ingin melihat semua fitur dari aplikasi ini silahkan kunjungi github saya dan clone projek ini
               </p>
             </div>
           </motion.div>
@@ -42,9 +45,9 @@ export default function Page() {
                 duration: 0.5,
               }}
             >
-              <h1 className='text-center text-2xl font-bold'>Berkenalan dengan Tim Kami</h1>
+              <h1 className='text-center text-2xl font-bold'>Berkenalan dengan Saya</h1>
               <div className='bg-primary mt-2 h-[2px] w-28'></div>
-              <p className='mb-10 mt-4 max-w-5xl text-center'>Salah satu alasan FlexForce dibuat adalah sebagai project UAS Desain Kreatif Aplikasi dan Game, adalah Tim Kami.</p>
+              <p className='mb-10 mt-4 max-w-5xl text-center'>Salah satu alasan KasaNews dibuat adalah sebagai technical test dari PT Eigen Tri Mathema</p>
             </motion.div>
             <div className='mb-16 mt-10'>
               <ul className='mx-auto grid grid-cols-1 gap-16 md:max-w-3xl lg:max-w-6xl lg:grid-cols-2'>

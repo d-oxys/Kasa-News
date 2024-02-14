@@ -6,7 +6,7 @@ const NewsStateContext = createContext<State | undefined>(undefined);
 const NewsDispatchContext = createContext<React.Dispatch<Action> | undefined>(undefined);
 
 export const NewsProvider = ({ children }: NewsProviderProps) => {
-  const [state, dispatch] = useReducer(newsReducer, { headlines: [] });
+  const [state, dispatch] = useReducer(newsReducer, { headlines: [], everything: [], articlesByFilter: [] });
 
   return (
     <NewsDispatchContext.Provider value={dispatch}>
