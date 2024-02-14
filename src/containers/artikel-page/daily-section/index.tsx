@@ -26,7 +26,7 @@ const ArticlesDailySection: FC<ArticlesDailySectionProps> = ({}) => {
         </div>
         <div className='flex w-full flex-col justify-between gap-4 xl:flex-row'>
           {headlines.map((el, _i) => (
-            <ArticleCard key={_i} secondary id={el.source.id} content={el.description} title={el.title} category={el.source.name} author={el.author} imgUrl={el.urlToImage} date={el.publishedAt} />
+            <ArticleCard key={_i} secondary id={el.source.id} content={el.description} title={el.title} category={el.source.name} author={el.author} imgUrl={el.urlToImage} date={el.publishedAt} url={el.url} />
           ))}
         </div>
       </div>
