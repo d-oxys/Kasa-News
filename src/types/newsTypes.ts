@@ -10,6 +10,7 @@ export type Article = {
   content: string;
   date: Date;
   urlToImage: string;
+  url: string;
 };
 
 export type ArticlesByFilter = Record<ArticleFilter, Article[]>;

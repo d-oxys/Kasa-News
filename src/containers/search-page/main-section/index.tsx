@@ -15,7 +15,6 @@ const NewsDetail = () => {
   useEffect(() => {
     const titleFromPathname = decodeURIComponent(pathname.split('/')[2] || '');
     setTitleParam(titleFromPathname);
-    console.log(titleFromPathname);
   }, [pathname]);
 
   useEffect(() => {
@@ -39,11 +38,12 @@ const NewsDetail = () => {
               {searchResults.map((result, index) => (
                 <div key={index}>
                   <div className='flex w-max flex-col gap-5 md:gap-7'>
-                    <Link href={`url`} className=''>
+                    <Link href={`${result.url}`} className=''>
                       <img src={result.urlToImage} style={{ objectFit: 'cover', width: '394', height: '360' }} className='h-[130px] w-[156px] sm:h-[194px] sm:w-[220px] md:h-[360px] md:w-[394px]' alt='Product IMG' />
                     </Link>
                     <div className='flex flex-col gap-3 md:gap-4'>
-                      <h2 className='text-textColor text-xs font-bold md:text-lg'>{result.author.length > 20 ? `${result.author.substring(0, 20)}...` : result.title}</h2>
+                      <h2 className='text-textColor text-xs font-bold md:text-lg'>{result.author ? (result.author.length > 20 ? `${result.author.substring(0, 20)}...` : result.author) : 'anonymous'}</h2>
+
                       <div>
                         <Link href={`url}`} className='text-xs font-bold text-black md:text-2xl'>
                           {result.title.length > 20 ? `${result.title.substring(0, 20)}...` : result.title}
