@@ -13,5 +13,6 @@ export const getRecommendation = async () => {
     return data;
   } catch (error) {
     console.error('There has been a problem with your fetch operation:', error);
+    throw error; // Add this line
   }
 };

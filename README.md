@@ -6,34 +6,6 @@ newsapi
 ├─ package-lock.json
 ├─ package.json
 ├─ postcss.config.js
-├─ public
-│  ├─ asset
-│  │  ├─ batik-icon-vertikal.svg
-│  │  ├─ batik-icon.svg
-│  │  ├─ fitur-ilustration.svg
-│  │  ├─ hero-ilustration.svg
-│  │  ├─ logo-white.svg
-│  │  ├─ mendali-emas.png
-│  │  ├─ mendali-perak.png
-│  │  ├─ mendali-perunggu.png
-│  │  ├─ newsapi.png
-│  │  ├─ please-login.png
-│  │  └─ search-ilustration.svg
-│  ├─ fonts
-│  │  └─ Eudoxus
-│  │     ├─ EudoxusSans-Bold.ttf
-│  │     ├─ EudoxusSans-ExtraBold.ttf
-│  │     ├─ EudoxusSans-ExtraLight.ttf
-│  │     ├─ EudoxusSans-Light.ttf
-│  │     ├─ EudoxusSans-Medium.ttf
-│  │     └─ EudoxusSans-Regular.ttf
-│  ├─ hero.png
-│  ├─ images
-│  │  └─ MOCH ICHSAN NR.jpg
-│  ├─ logo-white.svg
-│  ├─ logo.svg
-│  ├─ next.svg
-│  └─ vercel.svg
 ├─ README.md
 ├─ src
 │  ├─ actions
