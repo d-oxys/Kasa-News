@@ -21,3 +21,12 @@ export const getEverything = async (query = '', pageSize = 5) => {
     throw error;
   }
 };
+
+export const searchNews = async (query = '') => {
+  try {
+    const response = await axios.get(`${BASE_URL}/everything?q=${query}&apiKey=${API_KEY2}&pageSize=10`);
+    return response.data.articles;
+  } catch (error) {
+    throw error;
+  }
+};

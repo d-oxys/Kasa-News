@@ -17,5 +17,5 @@ const getURL = () => {
 
 export const searchHandler = async (formData: FormData) => {
   const key = formData.get('searchKey');
-  return redirect(getURL() + '/search?search=' + key);
+  return redirect(getURL() + '/search/' + key);
 };

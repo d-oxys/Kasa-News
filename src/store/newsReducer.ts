@@ -8,6 +8,8 @@ export const newsReducer = (state: State, action: Action) => {
       return { ...state, everything: action.payload };
     case 'SET_ARTICLES_BY_FILTER':
       return { ...state, articlesByFilter: action.payload };
+    case 'SET_SEARCH_RESULTS':
+      return { ...state, searchResults: action.payload };
     default:
       return state;
   }
